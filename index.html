@@ -1,28 +1,143 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="utf-8" />
-    <title>Flappy Bird – Bản Nâng Cấp</title>
-    <link href="/flappybird/css/style.css" rel="stylesheet"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mục Lục Bài Tập & Thông Tin Cá Nhân - Nguyễn Hiền Vy</title>
+    <!-- Favicon / Logo trang web -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./image/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./image/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./image/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./image/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./image/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./image/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./image/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./image/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./image/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./image/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        
+        /* PHẦN 1: THÔNG TIN CÁ NHÂN */
+        .profile {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #007bff;
+            margin-bottom: 35px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff;
+            margin-bottom: 15px;
+        }
+        .profile h1 {
+            color: #222;
+            margin: 5px 0;
+            font-size: 2em;
+        }
+        .profile p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .social-links a {
+            margin: 0 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* PHẦN 2: MỤC LỤC BÀI TẬP */
+        .exercise-list h2 {
+            color: #007bff;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+        }
+        .exercise-list ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .exercise-list li {
+            background: #e6f0ff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, background 0.3s;
+            text-align: center;
+        }
+        .exercise-list li:hover {
+            background: #cce0ff;
+            transform: translateY(-3px);
+        }
+        .exercise-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <div id="container">   
-
-        <span id="level">Level 1</span>
-        <span id="score">0</span>
-        <span id="high_score">Điểm cao nhất: 0</span>
-
-        <div id="bird"></div>
-        <div id="pole_1" class="pole"></div>
-        <div id="pole_2" class="pole"></div>
-
-        <button id="play_btn">Click để chơi</button>
+<div class="container">
+    
+    <div class="profile">
+        <img 
+            src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/avatar-cute-3.jpg" 
+            alt="Ảnh Đại Diện Nguyễn Hiền Vy"
+        >
+        <h1>NGUYỄN HIỀN VY</h1>
+        <p>MSSV: 31231026486</p>
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com/nguyen.vy.993505/" target="_blank">Facebook</a>
+        </div>
     </div>
 
-    <button id="restart_btn">Chơi lại</button>
+    <div class="exercise-list">
+    <h2>Danh sách bài tập</h2>
+     <ul>
+                <li><a href="./Tuan5/VeNha/Baitap1/ecommerce.html" target="_blank">Ecommerce Page</a></li>
+                <li><a href="./Tuan5/VeNha/Baitap2/flappybird.html" target="_blank">Flappy Bird</a></li>
+    </div>
 
-    <script src="/flappybirdjs/jquery.min.js"></script>
-    <script src="/flappybird/js/script.js"></script>
-</body>
-</html>
+    
+
