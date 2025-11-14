@@ -19,7 +19,7 @@ body {
     height: 480px;
     width: 350px;
     border: 1px solid #ccc;
-    background: url('../sprites/bg.png');
+    background: url('../Sprites/bg.png');
     background-size: cover;
     overflow: hidden;
     margin: 80px auto;
@@ -29,7 +29,7 @@ body {
 /* Con chim */
 #bird {
     position: absolute;
-    background: url('../sprites/bird.png');
+    background: url('../Sprites/bird.png');
     height: 42px;
     width: 65px;
     background-size: contain;
