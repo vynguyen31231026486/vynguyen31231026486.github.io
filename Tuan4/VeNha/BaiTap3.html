@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>BaiTap3</title>
+<style>
+
+  /* Bounce */
+  @keyframes bounce {
+    0%, 20%, 53%, 100% {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      transform: translate3d(0,-30px,0) scaleY(1.1);
+    }
+    70% {
+      transform: translate3d(0,-15px,0) scaleY(1.05);
+    }
+    80% {
+      transform: translate3d(0,0,0) scaleY(0.95);
+    }
+    90% {
+      transform: translate3d(0,-4px,0) scaleY(1.02);
+    }
+  }
+  .animate__bounce {
+    animation: bounce 1s;
+    transform-origin: center bottom;
+  }
+
+  /* Pulse */
+  @keyframes pulse {
+    0%   { transform: scale3d(1,1,1); }
+    50%  { transform: scale3d(1.05,1.05,1.05); }
+    100% { transform: scale3d(1,1,1); }
+  }
+  .animate__pulse {
+    animation: pulse 1s ease-in-out;
+  }
+
+  /* Flash */
+  @keyframes flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75%      { opacity: 0; }
+  }
+  .animate__flash {
+    animation: flash 1.5s;
+  }
+
+
+  /* --- Style ban đầu của bạn --- */
+  .khoa {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+  }
+
+  /* Khi hover – áp dụng hiệu ứng Animate.css */
+  .khoa:hover {
+    background-color: red;
+    font-size: 50px;
+    animation: bounce 1s; /* Hoặc pulse/flash */
+  }
+
+</style>
+</head>
+<body>
+
+<h1 class="khoa animate__pulse">Khoa CNTTKD</h1>
+
+</body>
+</html>

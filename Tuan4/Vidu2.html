@@ -1,0 +1,55 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<style>, initial-scale=1.0">
+    <title>Hiệu ứng</title>
+
+    <style>
+        div.at-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .at-item {
+            width: 100px;
+            height: 100px;
+            background-color: #ffe672;
+
+            animation-name: swirl-in-br-clock;
+            animation-duration: 2.2s;
+            animation-timing-function: linear;
+            animation-delay: 0.2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+
+            /* shorthand
+		animation: swirl-in-br-clock 2.2s linear 0.2s infinite normal none;*/
+        }
+
+        @keyframes swirl-in-br-clock {
+
+            0% {
+                transform: rotate(-540deg) scale(0);
+                transform-origin: 100% 100%;
+                opacity: 0;
+            }
+
+            100% {
+                transform: rotate(0) scale(1);
+                transform-origin: 100% 100%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class='at-container'>
+        <img class='at-item' width="200" src="https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png">
+    </div>
+</body>
+
+</html>
