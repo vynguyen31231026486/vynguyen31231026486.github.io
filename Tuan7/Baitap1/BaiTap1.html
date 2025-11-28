@@ -1,0 +1,17 @@
+
+<input type="text" id="ten" placeholder="Nhập tên">
+<input type="number" id="tuoi" placeholder="Nhập tuổi">
+<button onclick="hienthi()">Hiển thị</button>
+
+<div id="ketqua"></div>
+
+<script>
+function hienthi() {
+    let name = document.getElementById("ten").value;
+    let age = document.getElementById("tuoi").value;
+
+    document.getElementById("ketqua").innerHTML =
+        `<h1 style="color: blue; font-weight: bold;">${name}</h1>
+         <h2 style="text-decoration: underline;">${age}</h2>`;
+}
+</script>

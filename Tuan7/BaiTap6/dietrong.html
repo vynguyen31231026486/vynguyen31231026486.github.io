@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Anh hùng diệt Rồng</title>
+  <link rel="stylesheet" href="dragon_battle.css">
+</head>
+<body>
+
+<div class="battle-card">
+  <div class="battle-header">
+    <h1>TRẬN CHIẾN ANH HÙNG – DIỆT RỒNG</h1>
+    <span>Hero tấn công trước, rồng phản công sau. Né đòn, chí mạng, tất cả do số phận quyết định!</span>
+  </div>
+
+  <div class="arena">
+    <!-- Anh hùng -->
+    <div class="fighter" id="heroBox">
+      <div class="fighter-name">ANH HÙNG</div>
+      <div class="avatar">🗡️</div>
+      <div class="stats" id="heroStats"></div>
+      <div class="hp-bar">
+        <div class="hp-fill hp-hero" id="heroHpFill"></div>
+      </div>
+      <div class="stats" id="heroHpText"></div>
+    </div>
+
+    <div class="vs-label">VS</div>
+
+    <!-- Rồng -->
+    <div class="fighter" id="dragonBox">
+      <div class="fighter-name">HỎA LONG</div>
+      <div class="avatar">🐉</div>
+      <div class="stats" id="dragonStats"></div>
+      <div class="hp-bar">
+        <div class="hp-fill hp-dragon" id="dragonHpFill"></div>
+      </div>
+      <div class="stats" id="dragonHpText"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="buttons">
+      <button id="btnTurn">RA ĐÒN!</button>
+      <button id="btnReset">Chơi lại</button>
+    </div>
+    <div class="status" id="statusText">Nhấn "RA ĐÒN!" để bắt đầu hiệp đấu.</div>
+  </div>
+
+  <div class="log" id="logBox"></div>
+</div>
+
+<script src="dragon_battle.js"></script>
+</body>
+</html>

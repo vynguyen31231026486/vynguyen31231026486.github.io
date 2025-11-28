@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Đồng hồ đếm ngược</title>
+    <style>
+        span{
+            border: solid 1px #ACACAC;
+            padding: 5px 10px;
+            font-size: 20px;
+            min-width: 40px;
+            text-align: center;
+            display: inline-block;
+        }
+        input[type=text] {
+            width: 50px;
+            margin: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <strong>Nhập thông tin ban đầu:</strong> <br/>
+        <input type="text" id="h_val" placeholder="Giờ"/> 
+        <input type="text" id="m_val" placeholder="Phút"/> 
+        <input type="text" id="s_val" placeholder="Giây"/>
+        <input type="button" value="Start" id="startBtn"/>
+        <input type="button" value="Stop" id="stopBtn"/>
+    </div>
+
+    <div style="margin-top:20px;">
+        <span id="h">Giờ</span> :
+        <span id="m">Phút</span> :
+        <span id="s">Giây</span>
+    </div>
+
+    <!-- Link tới file JS -->
+    <script src="dongho.js"></script>
+</body>
+</html>

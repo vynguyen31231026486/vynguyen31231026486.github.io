@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dropdown Menu</title>
+    <style type="text/css">
+      #dropdown {
+        width: 200px;
+        padding: 0;
+      }
+      #dropdown li {
+        list-style: none;
+        line-height: 30px;
+        background: rgb(230, 100, 193);
+        margin: 2px;
+        cursor: pointer;
+      }
+
+      #dropdown li a {
+        margin-left: 10px;
+        color: #040809;
+        text-decoration: none;
+        display: block;
+      }
+
+      #dropdown ul {
+        display: none;
+        padding: 0;
+        background: rgb(156, 166, 232);
+      }
+
+      #dropdown ul li {
+        background-color: rgb(232, 168, 168);
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="dropdown">
+      <li><a href="#">Trang chủ</a></li>
+      <li>
+        <a href="#">Sản phẩm</a>
+        <ul>
+          <li><a href="#">Gạch cao cấp</a></li>
+          <li><a href="#">Gạch thủ công</a></li>
+          <li><a href="#">Gạch hoa văn</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Tin tức</a>
+        <ul>
+          <li><a href="#">Tin công nghệ</a></li>
+          <li><a href="#">Tin trong nước</a></li>
+          <li><a href="#">Tin thời sự</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Dịch vụ</a>
+        <ul>
+          <li><a href="#">Thiết kế web</a></li>
+          <li><a href="#">Quảng cáo web</a></li>
+          <li><a href="#">Thiết kế đồ họa</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Link tới file JS riêng -->
+    <script src="dropdown.js"></script>
+  </body>
+</html>
